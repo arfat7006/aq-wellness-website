@@ -1,7 +1,8 @@
-// Update the WhatsApp number below before publishing. Use country code + number, digits only.
-const WHATSAPP_NUMBER = "91XXXXXXXXXX";
+// Official AQ Wellness WhatsApp number (country code + number, digits only).
+const WHATSAPP_NUMBER = "919622419388";
 const message = encodeURIComponent("Assalamu Alaikum, I would like to enquire about AQ Wellness & Aesthetics Centre services.");
 const whatsapp = document.getElementById("whatsapp-link");
+document.querySelectorAll(".mobile-cta-wa").forEach(a => a.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`);
 if (whatsapp) {
   whatsapp.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
   whatsapp.addEventListener("click", (event) => {
